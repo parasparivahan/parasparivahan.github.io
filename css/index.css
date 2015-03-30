@@ -147,6 +147,13 @@ form input[type="text"], form textarea {
   resize: none;
   font-family: inherit;
 }
+form textarea {
+    width: 185%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+
+}
 form input[type="submit"], form input[type="reset"] {
   margin-top: 0.41em;
   color: #565656;
@@ -170,7 +177,7 @@ form .text-field {
       flex-flow: row wrap;
 }
 form .text-field .text {
-    min-width: 15%;
+    width: 15%;
 }
 .error-border {
   border: 1px solid red !important;

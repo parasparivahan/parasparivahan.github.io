@@ -35,7 +35,7 @@ var WEB_DATA = {
     				'</div>' +
     				' <div class="text-field"> ' +
     					'<div class="text"><label class="label" for="comment-id">Comments: </label></div>' +
-    					'<div class="input"><textarea cols="55" name="Comment" id="comment-id" onfocus="this.classList.remove(\'error-border\');"></textarea></div> ' +
+    					'<div class="input"><textarea name="Comment" id="comment-id" onfocus="this.classList.remove(\'error-border\');"></textarea></div> ' +
     				'</div>' +
     				' <div class="text-field"><input type="submit" value="Submit" name="submit"> ' +
     				' <input type="reset" value="Reset" name="reset"></div> </form>'
