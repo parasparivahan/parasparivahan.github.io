@@ -35,7 +35,6 @@
 		var form = node.getElementsByTagName('form');
 		form[0].addEventListener("submit", function(e) {
 			e.preventDefault();
-			e.stopPropagation();
 			var name = document.ContactForm.Name,
 				email = document.ContactForm.Email,
 				subject = document.ContactForm.Subject,

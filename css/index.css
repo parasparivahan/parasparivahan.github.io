@@ -140,7 +140,7 @@ body {
     font-weight: normal;
     text-decoration: none;
 }
-form input[type="text"], form textarea {
+form input[type="text"], form input[type="email"], form textarea {
   font-size: 1.083em;
     width: 100%;
   padding: 0.3em 1.3%;
