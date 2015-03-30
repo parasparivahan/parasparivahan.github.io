@@ -147,8 +147,6 @@ form input[type="text"], form input[type="email"], form textarea {
   border: 1px solid #ccc;
   font-family: inherit;
 }
-form textarea {
-}
 form input[type="submit"], form input[type="reset"] {
   margin-top: 0.41em;
   color: #565656;
@@ -172,10 +170,10 @@ form .text-field {
       flex-flow: row wrap;
 }
 form .text-field .text {
-    width: 15%;
+    width: 150px;
 }
 form .text-field .input {
-    width: 35%;
+    width: 300px;
 }
 .error-border {
   border: 1px solid red !important;
