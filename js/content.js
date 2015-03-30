@@ -23,19 +23,19 @@ var WEB_DATA = {
 					' name="ContactForm"> ' +
     				' <div class="text-field"> ' +
     					'<div class="text"><label class="label" for="name-id">Name: </label></div>' +
-    					'<div class="input"><input type="text" size="40" name="Name" placeholder="Your Name" id="name-id"></div> ' +
+    					'<div class="input"><input type="text" size="40" name="Name" placeholder="Your Name" id="name-id" onfocus="this.classList.remove(\'error-border\');"></div> ' +
     				'</div>' +
     				' <div class="text-field"> ' +
     					'<div class="text"><label class="label" for="email-id">E-mail Address: </label></div>' +
-    					'<div class="input"><input type="text" size="40" name="Email" placeholder="your email@email.com" id="email-id"></div> ' +
+    					'<div class="input"><input type="text" size="40" name="Email" placeholder="your email@email.com" id="email-id" onfocus="this.classList.remove(\'error-border\');"></div> ' +
     				'</div>' +
     				' <div class="text-field"> ' +
     					'<div class="text"><label class="label" for="subject-id">Subject: </label></div>' +
-    					'<div class="input"><input type="text" size="40" name="Subject" placeholder="Your Name" id="subject-id"></div> ' +
+    					'<div class="input"><input type="text" size="40" name="Subject" placeholder="Your Name" id="subject-id" onfocus="this.classList.remove(\'error-border\');"></div> ' +
     				'</div>' +
     				' <div class="text-field"> ' +
     					'<div class="text"><label class="label" for="comment-id">Comments: </label></div>' +
-    					'<div class="input"><textarea cols="55" name="Comment" id="comment-id">  </textarea></div> ' +
+    					'<div class="input"><textarea cols="55" name="Comment" id="comment-id" onfocus="this.classList.remove(\'error-border\');"></textarea></div> ' +
     				'</div>' +
     				' <div class="text-field"><input type="submit" value="Submit" name="submit"> ' +
     				' <input type="reset" value="Reset" name="reset"></div> </form>'
