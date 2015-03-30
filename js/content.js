@@ -23,15 +23,15 @@ var WEB_DATA = {
 					' name="ContactForm"> ' +
     				' <div class="text-field"> ' +
     					'<div class="text"><label class="label" for="name-id">Name: </label></div>' +
-    					'<div class="input"><input type="text" name="Name" placeholder="Your Name" id="name-id" onfocus="this.classList.remove(\'error-border\');"></div> ' +
+    					'<div class="input"><input type="text" name="Name" placeholder="Name" id="name-id" onfocus="this.classList.remove(\'error-border\');"></div> ' +
     				'</div>' +
     				' <div class="text-field"> ' +
     					'<div class="text"><label class="label" for="email-id">E-mail Address: </label></div>' +
-    					'<div class="input"><input type="email" name="Email" placeholder="your email@email.com" id="email-id" onfocus="this.classList.remove(\'error-border\');"></div> ' +
+    					'<div class="input"><input type="email" name="Email" placeholder="email@domain.com" id="email-id" onfocus="this.classList.remove(\'error-border\');"></div> ' +
     				'</div>' +
     				' <div class="text-field"> ' +
     					'<div class="text"><label class="label" for="subject-id">Subject: </label></div>' +
-    					'<div class="input"><input type="text" name="Subject" placeholder="Your Name" id="subject-id" onfocus="this.classList.remove(\'error-border\');"></div> ' +
+    					'<div class="input"><input type="text" name="Subject" placeholder="Subject" id="subject-id" onfocus="this.classList.remove(\'error-border\');"></div> ' +
     				'</div>' +
     				' <div class="text-field"> ' +
     					'<div class="text"><label class="label" for="comment-id">Comments: </label></div>' +
