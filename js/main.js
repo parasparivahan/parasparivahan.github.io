@@ -34,10 +34,13 @@
 	ValidateContactForm = function (node) {
 		var form = node.getElementsByTagName('form');
 		form[0].addEventListener("submit", function(e) {
+			e.preventDefault();
+			e.stopPropagation();
 			var name = document.ContactForm.Name,
 				email = document.ContactForm.Email,
 				subject = document.ContactForm.Subject,
-				comment = document.ContactForm.Comment, check = true;
+				comment = document.ContactForm.Comment, check = true,
+				http, url, params;
 
 			if (name.value.trim() === "")
 			{
@@ -65,7 +68,15 @@
 					email.classList.add("error-border");
 				}
 			}
-	    	return check;
+			if (check) {
+				var a = document.createElement("a");
+				params = "?body=" + "Name: " + name.value.trim() + "%0A" + 
+						"Email: " + email.value.trim() + "%0A" + "Comment: " + comment.value.trim() + "&subject=" + subject.value.trim();
+				a.href = this.action + params;
+				document.body.appendChild(a);
+				a.click();
+				
+			}
 	    });
 	}
 })();
