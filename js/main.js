@@ -34,7 +34,6 @@
 	ValidateContactForm = function (node) {
 		var form = node.getElementsByTagName('form');
 		form[0].addEventListener("submit", function(e) {
-			e.preventDefault();
 			var name = document.ContactForm.Name,
 				email = document.ContactForm.Email,
 				subject = document.ContactForm.Subject,
