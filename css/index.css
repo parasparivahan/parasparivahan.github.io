@@ -142,17 +142,12 @@ body {
 }
 form input[type="text"], form textarea {
   font-size: 1.083em;
+    width: 100%;
   padding: 0.3em 1.3%;
   border: 1px solid #ccc;
-  resize: none;
   font-family: inherit;
 }
 form textarea {
-    width: 185%;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-
 }
 form input[type="submit"], form input[type="reset"] {
   margin-top: 0.41em;
@@ -178,6 +173,9 @@ form .text-field {
 }
 form .text-field .text {
     width: 15%;
+}
+form .text-field .input {
+    width: 35%;
 }
 .error-border {
   border: 1px solid red !important;
@@ -220,9 +218,14 @@ a, button {
         flex-flow: column wrap;
         padding: 0;
     }
+    form .text-field .text {
+        width : 30%;
+    }
     #navigation li {
         width: 100%;
         text-align: center;
+        margin: 0 3px;
+        padding: 0.45em 0;
         border-top: 1px solid rgba(255, 255, 255, 0.3);
     }
     #navigation li a {
