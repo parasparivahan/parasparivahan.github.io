@@ -7,7 +7,7 @@ html {
     height: 100%;
 }
 body {
-    background: #FFF url(../images/road.jpg) no-repeat center center fixed;
+    background: #FFF url(../images/body_bg_bot.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -79,7 +79,7 @@ body {
     padding-left: 0;
 }
 #navigation li a {
-    color: #FFFFFF !important;
+    color: #EEE !important;
     font-family: "times new roman", sans-serif, Arial, Verdana, Helvetica;
     font-size: 1em;
     font-weight: normal !important;
@@ -90,6 +90,7 @@ body {
 }
 #navigation li a:hover {
     text-decoration: underline;
+    color: #FFF !important;
 }
 .ppl-content-box {
     height: auto;
@@ -117,12 +118,12 @@ body {
     padding: 0 4px;
 }
 .ppl-footer ul li a {
-    color: #eee !important;
+    color: #555 !important;
     font-weight: normal;
     text-decoration: none;
 }
 .ppl-footer ul li a:hover {
-    color: #888888 !important;
+    color: #888 !important;
     font-weight: normal;
     text-decoration: none;
 }
@@ -131,11 +132,11 @@ body {
 }
 .ppl-legal {
     text-align: center;
-    color: #eee !important;
+    color: #555 !important;
     font-size: 0.75em;
 }
 .ppl-legal a {
-    color: #eee !important;
+    color: #555 !important;
     font-weight: normal;
     text-decoration: none;
 }
@@ -186,6 +187,10 @@ a, button {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 @media all and (max-width: 1020px) {
+    body {
+        background-image: none;
+        padding-top: 0em;
+    }
     .ppl-main {
       width: 100%;
     }
@@ -194,6 +199,10 @@ a, button {
     }
 }
 @media all and (max-width: 600px) {
+    body {
+        background-image: none;
+        padding-top: 0em;
+    }
     .ppl-main {
       width: 100%;
     }
@@ -215,7 +224,11 @@ a, button {
     }
 }
 @media all and (max-width: 480px) {
-  #navigation {
+    body {
+        background-image: none;
+        padding-top: 0em;
+    }
+    #navigation {
         -webkit-flex-flow: column wrap;
         flex-flow: column wrap;
         padding: 0;
