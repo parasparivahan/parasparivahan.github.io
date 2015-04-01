@@ -28,7 +28,12 @@ body {
 .ppl-header {
     background: url("../images/nav.png") repeat-x scroll 0 85% transparent;
     padding: 0.09em;
+     display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     justify-content: flex-start;
 }
@@ -67,6 +72,7 @@ body {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     /* This aligns items to the end line on main-axis */
     justify-content: flex-start;
@@ -170,8 +176,13 @@ form input[type="submit"], form input[type="reset"] {
 }
 form .text-field {
     margin-bottom: 0.83em;
+     display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
       display: flex;
       justify-content: flex-start;
+      -webkit-flex-flow: row wrap;
       flex-flow: row wrap;
 }
 form .text-field .text {
