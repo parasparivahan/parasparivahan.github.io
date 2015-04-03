@@ -70,12 +70,11 @@
 			}
 			if (check) {
 				var a = document.createElement("a");
-				params = "?body=" + "Name: " + name.value.trim() + "%0A" + 
+				params = "?body=" + "Name: " + name.value.trim() + "%0A" +
 						"Email: " + email.value.trim() + "%0A" + "Comment: " + comment.value.trim() + "&subject=" + subject.value.trim();
 				a.href = this.action + params;
 				document.body.appendChild(a);
 				a.click();
-				
 			}
 	    });
 	}
