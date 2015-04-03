@@ -26,7 +26,7 @@ body {
     box-shadow: 0 0 0.70em 0 #0C4270;
 }
 .ppl-header {
-    background: url("../images/nav.png") repeat-x scroll 0 85% transparent;
+    background: url("../images/nav.png") repeat-x scroll 0 85% rgb(12,65,130);
     padding: 0.09em;
      display: -webkit-box;
     display: -moz-box;
@@ -290,6 +290,12 @@ a, button {
         -webkit-flex-flow: column wrap;
         flex-flow: column wrap;
         padding: 0;
+    }
+    .ppl-heading {
+            padding-top: 11px;
+    }
+    .ppl-name {
+        padding-top:0px;
     }
     form .text-field .text {
         width : 30%;
