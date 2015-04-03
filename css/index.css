@@ -212,6 +212,14 @@ ul.customers {
     list-style: none;
     margin : 0;
     padding: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+     -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: flex-start;
 
 }
 div.customers-extra {
@@ -222,8 +230,8 @@ div.customers-extra {
 ul.customers li {
     font-weight: bold;
   margin-bottom: 15px;
-  float:left;
-  width:50%;
+  width:350px;
+    flex-grow: 1;
     padding: 0;
 }
 .address, .operation, .manager {
@@ -243,6 +251,12 @@ ul.customers li {
 }
 a, button {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+@media all and (max-width: 1200px) {
+
+    .ppl-main {
+      width: 70%;
+    }
 }
 @media all and (max-width: 1020px) {
     body {
