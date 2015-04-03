@@ -13,14 +13,50 @@ var WEB_DATA = {
 				" trucks and also at our disposal vehicles of all types through " +
 				" associate transport companies so as to cater to the particular " +
 				" requirements of our clients at any given time</p>",
-	"about": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis cursus tortor. Nunc consectetuer diam ac odio. " +
-				"Pellentesque vel mauris sit amet urna malesuada ornare. Curabitur venenatis est eget arcu. Donec vestibulum. Proin rutrum. " +
-				"Morbi commodo fringilla orci. Ut vel tortor. In ut velit. Vivamus hendrerit aliquam quam. Curabitur placerat eros vitae " +
-				"libero.Pellentesque vitae velit at dui semper sodales. Curabitur accumsan ornare libero. Quisque auctor. Lorem ipsum dolor sit " +
-				"amet, consectetuer adipiscing elit. Nulla adipiscing porta ante",
-	"service": '<p> ' +
-				'</p>',
-	"contact" : '<form method="post" action="mailto:paras1620@gmail.com" ' +
+	"service": "<p> We are recognized as one of the trustworthy providers of domestic " +
+					" transportation services in India. The road transportation services " +
+					" offered by us are chiefly appreciated for their excellence and " +
+					" timeliness. Serving with dedication, we wish to deliver the products " +
+					" to the desired destination well within the time.</p><p> We transport cotton " +
+					" bales by truck and due to the unending support of our experts we " +
+					" deliver these cotton bales safely. Considered as a reliable entity, we " +
+					" offer truck transportation services at the most competitive prices of " +
+					" the industry. Last but not the least; all this has helped us in " +
+					" establishing a strong customer base all over the country </p>" +
+					" <div class='customers'> Some of our Estimated customers are: </div>" +
+					"<ul class='customers'> <li>Lokmat Media Limited. </li>" +
+					"<li>Pudhari Publication Pvt Limited. </li> " +
+					"<li>Hari Bhoomi Newspapers Pvt Limited. </li> " +
+					"<li>D.B.CORP LIMITED. </li> " +
+					"<li>Manipal Media Network Limited. </li> " +
+					"<li>Jagran Prakashan Limited. </li> " +
+					"<li>Nai Dunia Media Pvt. Limited. </li> " +
+					"<li>Darpan Publication Pvt. Limited. </li> " +
+					"<li>Kanada Prabha Publication Limited. </li> " +
+					"<li>Rajasthan Patrika Pvt. Limited. </li> " +
+					"<li>Bhaskar Prakashan Pvt Limited. </li> " +
+					"<li>Sri Ramadas Paper Boards Pvt. Limited. </li> " +
+					"<li>Suryachandra Paper Mills Limited. </li> " +
+					"<li>Sree Godavari Kraft Papers Pvt Limited. </li> " +
+					"<li>Vamasadhara Paper Mills Limited. </li> " +
+					"<li>Samyukta Karanatka (Lok Shikshana Trust Publications). </li> " +
+					"<li>Manipal Technology Limited. </li> " +
+					"<li>Sri Ambika Printers & Publications. </li> " +
+					"<li>Sahara India Mass Comunicaion Limited. </li> " +
+					"<li>Academy Newspapers Pvt. Limited. </li> " +
+					"<li>Netural Publishing House Limited. </li></ul><div class='customers-extra'> Many More Other Customers....</div> ",
+	"contact": '<div> '+
+				'<div class="address"><div >Address:</div>' +
+				'<div><p>Paras Parivahan | Rajahmundry (AP) </p> '+
+				'<p>Direct Fixed Ph: + 91 883 2461620 </p> '+
+				'<p>Ph: + 91 883 2441620 | 2431620 | 2421620 </p> '+
+				'<p>Tele Fax: + 91 883 2430620 </p> '+
+			'<p>	Mob:+ 91 9490760920 | + 91 9912666620 </p> '+
+			'<p>Email:paras1620@gmail.com </p> </div></div>'+
+			'<div class="manager"><div>Manager: </div><div>R.T.NAIDU <div class="phone">(09440177620)</div></div></div>' +
+			'<div class="operation"><div>Operation: </div><div>B.RAMA RAO<div class="phone">(07730043620)</div></div></div>' +
+				'</div>',
+	"feedback" : '<form method="post" action="mailto:paras1620@gmail.commodo" ' +
 					' name="ContactForm"> ' +
     				' <div class="text-field"> ' +
     					'<div class="text"><label class="label" for="name-id">Name: </label></div>' +

@@ -35,7 +35,6 @@ body {
     display: flex;
      -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-    max-height: 156px;
     justify-content: flex-start;
 }
 .ppl-logo {
@@ -83,7 +82,7 @@ body {
 }
 #navigation li {
     margin: 0.25em 3px;
-    width: 90px;
+    width: 110px;
 }
 #navigation li:first-child a {
     padding-left: 0;
@@ -92,7 +91,7 @@ body {
     color: #EEE !important;
     font-family: "times new roman", sans-serif, Arial, Verdana, Helvetica;
     font-size: 1em;
-    font-weight: normal !important;
+    font-weight: normal ;
     line-height: 2em;
     padding: 0.5em 0 0.4em;
     text-transform: uppercase;
@@ -112,6 +111,7 @@ body {
 }
 #ppl-main-content {
     text-align: justify;
+    overflow: hidden;
 }
 .ppl-footer {
     margin: 0.5em 0px;
@@ -197,6 +197,49 @@ form .text-field .input {
 }
 .error-border {
   border: 1px solid red !important;
+}
+.underline-border {
+  text-decoration: underline;
+  font-weight:bold;
+}
+.underline-border a {
+    font-weight:bolder !important;
+}
+div.customers {
+    padding: 15px 0px;
+}
+ul.customers {
+    list-style: none;
+    margin : 0;
+    padding: 0;
+
+}
+div.customers-extra {
+    clear: both;
+  font-style: italic;
+  text-decoration: underline;
+}
+ul.customers li {
+    font-weight: bold;
+  margin-bottom: 15px;
+  float:left;
+  width:50%;
+    padding: 0;
+}
+.address, .operation, .manager {
+      display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+    margin-bottom: 15px;
+}
+.address > div:first-child, .manager > div:first-child, .operation > div:first-child {
+    width:150px;
+    font-weight: bold;
+      padding-bottom: 10px;
+}
+.manager .phone,  .operation .phone {
+    font-size: 0.9em;
+  font-style: italic;
 }
 a, button {
   -webkit-tap-highlight-color: rgba(0,0,0,0);

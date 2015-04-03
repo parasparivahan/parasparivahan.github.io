@@ -12,15 +12,19 @@
 	    };
 
 	navNode.addEventListener('click', function (e) {
-		var target = e.target || e.srcElement, type, data;
+		var target = e.target || e.srcElement, type, data, parent = target.parentNode, grandPapa = this.children;
 		if (target) {
 			if (target.nodeName !== 'A') return;
 			e.stopPropagation();
 			e.preventDefault();
 			type = target.getAttribute('data-attr');
+			for (var i = 0; i < grandPapa.length; 	i++) {
+				grandPapa[i].classList.remove('underline-border');
+			}
+			parent.classList.add("underline-border");
 			data = WEB_DATA[type];
 			contentNode.innerHTML = data;
-			if (!contactListener) {
+			if (!contactListener && type === 'feedback') {
 				ValidateContactForm(contentNode);
 				contactListener = true;
 			}
