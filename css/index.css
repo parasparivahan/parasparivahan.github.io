@@ -38,20 +38,20 @@ body {
     justify-content: flex-start;
 }
 .ppl-logo {
-    width: 28%;
+    width: 15%;
     display: table-cell;
     vertical-align: middle;
+    margin-right: 1.2em;
 }
 .ppl-heading {
-    width: 72%;
+    width: 80%;
 }
 .ppl-name {
-    padding: 2em 0;
+    padding: 3em 0;
     display: table-cell;
     vertical-align: middle;
 }
 .ppl-site-name {
-    margin-bottom: 0.5em;
     font-size: 1.67em;
 }
 .ppl-site-name a {
@@ -59,6 +59,9 @@ body {
     font-weight: bold;
     color: #FFF;
     text-decoration: none;
+}
+.ppl-logo a img {
+    max-width: 100%;
 }
 .ppl-name span {
     color: #FFF;
@@ -209,7 +212,7 @@ a, button {
         justify-content: space-around;
     }
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 650px) {
     body {
         background-image: none;
         padding-top: 0em;
