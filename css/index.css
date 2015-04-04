@@ -38,13 +38,40 @@ body {
     justify-content: flex-start;
 }
 .ppl-logo {
+    position: relative;
     width: 20%;
-    display: table-cell;
+    display: inline-block;
+}
+.ppl-logo .dummy {
+    padding-top: 100%; /* forces 1:1 aspect ratio */
+}
+.ppl-logo .img-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align:center; /* Align center inline elements */
+    font: 0/0 a;
+}
+.ppl-logo .img-container .centerer {
+    display: inline-block;
     vertical-align: middle;
-    margin-right: 1.2em;
+    height: 100%;
+}
+
+.ppl-logo .img-container img {
+    vertical-align: middle;
+    display: inline-block;
 }
 .ppl-heading {
     width: 77%;
+      margin-left: 3%;
+      position: relative;
+}
+.ppl-navigation-links {
+      position: absolute;
+  bottom: 0em;
 }
 .ppl-name {
     padding: 3em 0;
@@ -60,7 +87,7 @@ body {
     color: #FFF;
     text-decoration: none;
 }
-.ppl-logo a img {
+.ppl-logo img {
     max-width: 100%;
 }
 .ppl-name span {
@@ -84,22 +111,37 @@ body {
     margin: 0.25em 3px;
     width: 110px;
 }
+#navigation li div {
+      width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #eee;
+  display: inline-block;
+  margin-right: 5px;
+}
 #navigation li:first-child a {
     padding-left: 0;
+}
+#navigation li:nth-child(4) {
+      margin-left: 1.2em;
 }
 #navigation li a {
     color: #EEE !important;
     font-family: "times new roman", sans-serif, Arial, Verdana, Helvetica;
     font-size: 1em;
-    font-weight: normal ;
     line-height: 2em;
     padding: 0.5em 0 0.4em;
     text-transform: uppercase;
     text-decoration: none;
 }
-#navigation li a:hover {
+#navigation li:hover {
     text-decoration: underline;
     color: #FFF !important;
+    font-weight:bold;
+}
+#navigation li:hover div {
+    border-left: 5px solid #FFF;
 }
 .ppl-content-box {
     height: auto;
@@ -128,12 +170,12 @@ body {
     padding: 0 4px;
 }
 .ppl-footer ul li a {
-    color: #555 !important;
+    color: #eee !important;
     font-weight: normal;
     text-decoration: none;
 }
 .ppl-footer ul li a:hover {
-    color: #888 !important;
+    color: #fff !important;
     font-weight: normal;
     text-decoration: none;
 }
@@ -142,11 +184,11 @@ body {
 }
 .ppl-legal {
     text-align: center;
-    color: #555 !important;
+    color: #eee !important;
     font-size: 0.75em;
 }
 .ppl-legal a {
-    color: #555 !important;
+    color: #eee !important;
     font-weight: normal;
     text-decoration: none;
 }
@@ -307,19 +349,29 @@ a, button {
     }
     .ppl-heading {
             padding-top: 11px;
+            margin-left:0px;
+            padding-right: 2%;
     }
     .ppl-name {
         padding-top:0px;
+    }
+    .ppl-navigation-links {
+        position: static;
     }
     form .text-field .text {
         width : 30%;
     }
     #navigation li {
         width: 100%;
-        text-align: center;
+        position: relative;
+
         margin: 0 3px;
         padding: 0.45em 0;
+        padding-left: 40%;
         border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    #navigation li:nth-child(4) {
+        margin-left: 0;
     }
     #navigation li a {
         line-height:1em;
