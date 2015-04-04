@@ -311,6 +311,12 @@ a, button {
     #navigation {
         justify-content: space-around;
     }
+    .ppl-footer ul li a {
+        color: #888 !important;
+    }
+    .ppl-legal {
+        color: #888 !important;
+    }
 }
 @media all and (max-width: 650px) {
     body {
@@ -335,6 +341,12 @@ a, button {
     #navigation a {
         text-align: center;
         padding: 10px;
+    }
+    .ppl-footer ul li a {
+        color: #888 !important;
+    }
+    .ppl-legal {
+        color: #888 !important;
     }
 }
 @media all and (max-width: 480px) {
@@ -383,5 +395,11 @@ a, button {
     }
     #navigation li:last-of-type{
         border-bottom: none;
+    }
+    .ppl-footer ul li a {
+        color: #888 !important;
+    }
+    .ppl-legal {
+        color: #888 !important;
     }
 }
